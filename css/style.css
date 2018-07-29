@@ -1,0 +1,108 @@
+body {
+    font: 11px sans-serif;
+}
+
+body {
+    background: #fcfcfa;
+}
+
+.stroke {
+    fill: none;
+    stroke: #000;
+    stroke-width: 3px;
+}
+
+.fill {
+    fill: #fff;
+}
+
+.graticule {
+    fill: none;
+    stroke: #777;
+    stroke-width: .5px;
+    stroke-opacity: .5;
+}
+
+.land {
+    fill: #222;
+}
+
+.boundary {
+    fill: none;
+    stroke: #fff;
+    stroke-width: .5px;
+}
+
+.toolTip {
+    position: absolute;
+    display: none;
+    min-width: 80px;
+    height: auto;
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #6F257F;
+    padding: 14px;
+    text-align: center;
+}
+
+/* Creates a small triangle extender for the tooltip */
+
+rect:hover {
+    fill-opacity: 0.7;
+}
+
+#sbar rect {
+    fill: steelblue;
+}
+
+circle:hover {
+    fill-opacity: 0.7;
+}
+
+#fcs {
+    fill: black;
+}
+
+.load-container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 9;
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    margin: -95px 0 0 -55px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid steelblue;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 0.8s linear infinite;
+    animation: spin 0.8s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
